@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title> image upload page </title>
+<body>
+Thank you, <%=userId%>, you are already added. 
+<form method="POST" enctype="multipart/form-data" action="/upload/<%=userId%>">
+<input type="file" name="filefield"><br/>
+<input type="submit" name="upload" value="Upload">
+</form>
+
+<br>
+<br>
+<form method="POST" enctype="text/plain" action="/imageDisplay/<%=userId%>">
+<input type="submit" name="imageDisplay" value="DisplayImage">
+</form>
+</body>
+</html>
